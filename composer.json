@@ -1,0 +1,20 @@
+{
+  "name": "cheukpang/ftx-top",
+  "description": "ftx Top Client",
+  "minimum-stability": "dev",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "kwan",
+      "email": "303198069@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ftx\\": ""
+    }
+  }
+}
