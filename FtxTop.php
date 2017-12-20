@@ -54,9 +54,9 @@ class FtxTop
         $sysParams['format'] = $this->format;
         $sysParams['sign_method'] = $this->signMethod;
         $sysParams['method'] = $request->getApiMethodName();
-        $sysParams['timestamp'] = NOW_TIME;
-        $sysParams['dethod'] = $_SERVER['SERVER_NAME'];
-        $sysParams['client'] = get_client_ip();
+        $sysParams['timestamp'] = time();
+        $sysParams['dethod'] = 'etaoh.com';
+        $sysParams['client'] = $_SERVER['REMOTE_ADDR'];
         $sysParams['partner_id'] = $this->sdkVersion;
         if (null != $session) {
             $sysParams['session'] = $session;
